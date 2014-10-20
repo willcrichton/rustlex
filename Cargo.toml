@@ -1,0 +1,5 @@
+[package]
+
+name = "rustlex"
+version = "0.0.1"
+authors = ["Leo Testard <leo.testard@gmail.com", "Mathieu Poumeyrol <kali@zoy.org>"]
