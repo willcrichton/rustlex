@@ -1,3 +1,4 @@
+use std::iter;
 use nfa;
 use std::result;
 use util;
@@ -130,7 +131,7 @@ impl Automaton {
         // of subgroups of the form (gr, st) where gr is the number of the
         // subgroup (it may be the same as the original group), and st the
         // number of a representing state
-        let mut subgroups: Vec<Vec<(usize, usize)>> = repeat(vec!()).take(acts_count).collect();
+        let mut subgroups: Vec<Vec<(usize, usize)>> = iter::repeat(vec!()).take(acts_count).collect();
         loop {
             // subgroups become groups, reinitialize subgroups
             for i in subgroups.iter_mut() {
