@@ -1,7 +1,7 @@
 use std::io::Read;
 use std::ops::IndexMut;
 
-const RUSTLEX_BUFSIZE: usize = 16384;
+const RUSTLEX_BUFSIZE: usize = 65536;
 
 pub struct RustLexBuffer {
     d: Vec<u8>,
