@@ -175,8 +175,7 @@ pub fn actions_match(lex:&Lexer, cx: &mut ExtCtxt, sp: Span) -> P<ast::Expr> {
         lexer._input.pos.off += 1;
         let b: &u8 = lexer._input.inp[
             lexer._input.tok.buf].get(lexer._input.tok.off);
-        panic!("Unexpected char {} at position {}", *b as char, lexer._input.pos.off);
-        None
+        panic!("Unexpected char {} at position {}", *b as char, lexer._input.pos.off)
     }) as Box<$action_type>);
 
     let def_pat = cx.pat_wild(sp);
