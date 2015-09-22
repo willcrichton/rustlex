@@ -1,6 +1,7 @@
 use std::io::Read;
 use std::ops::IndexMut;
 
+// TODO: find a way around this massive buffer
 const RUSTLEX_BUFSIZE: usize = 16777216;
 
 pub struct RustLexBuffer {

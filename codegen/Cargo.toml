@@ -16,11 +16,11 @@ name = "rustlex_codegen"
 with-syntex = ["quasi/with-syntex", "quasi_codegen/with-syntex", "syntex", "syntex_syntax"]
 
 [build-dependencies]
-quasi_codegen = { version = "*", optional = true }
+quasi_codegen = { version = "*" }
 syntex        = { version = "*", optional = true }
 
 [dependencies]
 log = "*"
-quasi         = { version = "*", optional = true }
+quasi         = { version = "*" }
 syntex        = { version = "*", optional = true }
 syntex_syntax = { version = "*", optional = true }
